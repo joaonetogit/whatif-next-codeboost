@@ -8,6 +8,7 @@ export const SectionHeroStyle = styled('section', {
   width: '100%',
   height: 731,
   background: `url(${BgHero.src}) no-repeat top center`,
+  backgroundAttachment: 'fixed',
   paddingTop: 96,
   display: 'flex',
 
@@ -22,7 +23,7 @@ export const SectionHeroStyle = styled('section', {
     bottom: 0,
     left: 0,
     width: '100%',
-    height: 100,
+    height: 300,
     backgroundImage: 'linear-gradient(transparent, black)',
   },
 });
@@ -54,6 +55,7 @@ export const ContentText = styled('div', {
   flex: 1,
   paddingBottom: 31,
   borderRight: '1px solid rgba(255,255,255, 0.2)',
+  zIndex: 3,
 
   '.left': {
     flex: 1,
