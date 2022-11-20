@@ -1,5 +1,5 @@
-import { CardCharacter } from '../components/CardCharacter';
 import { Header } from '../components/Header';
+import { ListCharacters } from '../components/Home/ListCharacters';
 import { SectionHero } from '../components/Home/sectionHero';
 
 export default function Home() {
@@ -7,7 +7,7 @@ export default function Home() {
     <>
       <Header />
       <SectionHero />
-      <CardCharacter />
+      <ListCharacters />
     </>
   );
 }
