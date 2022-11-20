@@ -23,6 +23,9 @@ export const globalStyles = globalCss({
   button: {
     cursor: 'pointer',
   },
+  a: {
+    textDecoration: 'none',
+  },
 });
 
 export const Container = styled('div', {
