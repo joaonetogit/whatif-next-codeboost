@@ -15,7 +15,6 @@ export const globalStyles = globalCss({
     background: 'linear-gradient(119.36deg, #010101 0%, #000000 100%);',
     color: '$white',
     'webkit-font-smoothing': 'antialiased',
-    height: '100vh',
   },
   img: {
     maxWidth: '100%',
