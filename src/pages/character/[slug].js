@@ -1,6 +1,16 @@
-import { useRouter } from 'next/router';
+import { SectionHeroCharacter } from '../../components/Details/SectionHeroCharacter';
+import { ListCharacters } from '../../components/Home/ListCharacters';
+import { PageTitle } from '../../components/PageTitle';
 
 export default function PageCharacter() {
-  const route = useRouter();
-  return <h1>Detalhes do personagem {JSON.stringify(route.query)}</h1>;
+  return (
+    <>
+      <PageTitle
+        title="What If? - Codeboost | Detalhes do personagem"
+        description="Um projeto desenvolvido no curso codeboost"
+      />
+      <SectionHeroCharacter />
+      <ListCharacters />
+    </>
+  );
 }

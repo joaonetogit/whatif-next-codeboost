@@ -9,37 +9,37 @@ const characters = [
   {
     name: 'Killmonger',
     image: ImageCharacter,
-    slug: '/killmonger',
+    slug: 'killmonger',
   },
   {
     name: 'Captain Carter',
     image: ImageCharacter,
-    slug: '/captain-carter',
+    slug: 'captain-carter',
   },
   {
     name: 'Killmonger',
     image: ImageCharacter,
-    slug: '/killmonger',
+    slug: 'killmonger',
   },
   {
     name: 'Killmonger',
     image: ImageCharacter,
-    slug: '/killmonger',
+    slug: 'killmonger',
   },
   {
     name: 'Captain Carter',
     image: ImageCharacter,
-    slug: '/captain-carter',
+    slug: 'captain-carter',
   },
   {
     name: 'Killmonger',
     image: ImageCharacter,
-    slug: '/killmonger',
+    slug: 'killmonger',
   },
   {
     name: 'Captain Carter',
     image: ImageCharacter,
-    slug: '/captain-carter',
+    slug: 'captain-carter',
   },
 ];
 
