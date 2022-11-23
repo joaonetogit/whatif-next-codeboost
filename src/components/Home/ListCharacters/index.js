@@ -52,9 +52,14 @@ export function ListCharacters() {
           <h2>Personagens Marvel</h2>
         </div>
         <StyleListCharacters>
-          {characters.map(({ name, image, slug }) => {
+          {characters.map(({ name, image, slug }, index) => {
             return (
-              <CardCharacter key={name} image={image} name={name} slug={slug} />
+              <CardCharacter
+                key={index}
+                image={image}
+                name={name}
+                slug={slug}
+              />
             );
           })}
 
