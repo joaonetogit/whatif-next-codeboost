@@ -5,45 +5,7 @@ import { Container } from '../../../styles/global';
 import { StyleListCharacters, StyleSectionCharacters } from './styles';
 import { CardCharacter } from '../../CardCharacter';
 
-const characters = [
-  {
-    name: 'Killmonger',
-    image: ImageCharacter,
-    slug: 'killmonger',
-  },
-  {
-    name: 'Captain Carter',
-    image: ImageCharacter,
-    slug: 'captain-carter',
-  },
-  {
-    name: 'Killmonger',
-    image: ImageCharacter,
-    slug: 'killmonger',
-  },
-  {
-    name: 'Killmonger',
-    image: ImageCharacter,
-    slug: 'killmonger',
-  },
-  {
-    name: 'Captain Carter',
-    image: ImageCharacter,
-    slug: 'captain-carter',
-  },
-  {
-    name: 'Killmonger',
-    image: ImageCharacter,
-    slug: 'killmonger',
-  },
-  {
-    name: 'Captain Carter',
-    image: ImageCharacter,
-    slug: 'captain-carter',
-  },
-];
-
-export function ListCharacters() {
+export function ListCharacters({ data }) {
   return (
     <StyleSectionCharacters>
       <Container>
@@ -52,13 +14,13 @@ export function ListCharacters() {
           <h2>Personagens Marvel</h2>
         </div>
         <StyleListCharacters>
-          {characters.map(({ name, image, slug }, index) => {
+          {data.map((character) => {
             return (
               <CardCharacter
-                key={index}
-                image={image}
-                name={name}
-                slug={slug}
+                key={character.id}
+                image={character.data.image_character.url}
+                name={character.data.name_character}
+                slug={character.data.slug}
               />
             );
           })}

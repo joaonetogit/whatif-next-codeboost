@@ -10,7 +10,6 @@ export default function PageCharacter() {
         description="Um projeto desenvolvido no curso codeboost"
       />
       <SectionHeroCharacter />
-      <ListCharacters />
     </>
   );
 }
