@@ -10,8 +10,8 @@ export default function Home({ dataPage, characters }) {
         title="What If? - Codeboost"
         description="Um projeto desenvolvido no curso codeboost"
       />
-      <SectionHero data={dataPage} />
-      <ListCharacters data={characters} />
+      {dataPage && <SectionHero data={dataPage} />}
+      {characters && <ListCharacters data={characters} />}
     </>
   );
 }

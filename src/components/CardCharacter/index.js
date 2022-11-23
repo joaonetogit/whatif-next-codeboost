@@ -1,6 +1,5 @@
 import Link from 'next/link';
 import { StyleCard } from './styles';
-import ImageCharacter from '../../assets/character.jpg';
 import Image from 'next/image';
 
 export function CardCharacter({ image, name, slug }) {
