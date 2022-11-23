@@ -25,6 +25,6 @@ export const getStaticProps = async () => {
       dataPage: contentsPages.data,
       characters,
     },
-    /* revalidate: 10, */
+    revalidate: 86400,
   };
 };
