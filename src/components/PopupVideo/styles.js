@@ -4,6 +4,11 @@ import BgThumb from '../../assets/thumb-video.png';
 export const PopupVideoStyle = styled('div', {
   width: '100%',
   maxWidth: 312,
+
+  '@md': {
+    alignSelf: 'flex-end',
+  },
+
   span: {
     display: 'block',
     fontWeight: 600,

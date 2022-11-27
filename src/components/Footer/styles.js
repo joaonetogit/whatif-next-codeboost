@@ -52,6 +52,11 @@ export const FooterStyle = styled('div', {
           maxWidth: '85%',
           marginLeft: 'unset',
         },
+
+        '@xs': {
+          maxWidth: '100%',
+          textAlign: 'center',
+        },
       },
     },
   },

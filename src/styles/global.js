@@ -10,6 +10,10 @@ export const globalStyles = globalCss({
 
   html: {
     fontSize: '62.5%',
+
+    '@md': {
+      fontSize: '50%',
+    },
   },
   body: {
     background: 'linear-gradient(119.36deg, #010101 0%, #000000 100%);',

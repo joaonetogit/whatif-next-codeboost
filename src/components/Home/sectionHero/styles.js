@@ -12,6 +12,10 @@ export const SectionHeroStyle = styled('section', {
   paddingTop: 96,
   display: 'flex',
 
+  '@md': {
+    height: 'unset',
+  },
+
   [`${Container}`]: {
     display: 'flex',
     alignItems: 'flex-start',
@@ -34,6 +38,16 @@ export const AreaSocial = styled('div', {
   borderLeft: '1px solid rgba(255,255,255, 0.2)',
   borderRight: '1px solid rgba(255,255,255, 0.2)',
 
+  '@sm': {
+    borderLeft: 'unset',
+    borderRight: 'unset',
+    position: 'absolute',
+    right: 42,
+    width: 'max-content',
+    height: 'fit-content',
+    zIndex: 12,
+  },
+
   ul: {
     display: 'flex',
     flexDirection: 'column',
@@ -42,6 +56,11 @@ export const AreaSocial = styled('div', {
     padding: '30px 0',
     borderBottom: '1px solid rgba(255,255,255, 0.2)',
     gap: 32,
+
+    '@sm': {
+      flexDirection: 'row',
+      borderBottom: 'unset',
+    },
   },
 });
 
@@ -57,10 +76,31 @@ export const ContentText = styled('div', {
   borderRight: '1px solid rgba(255,255,255, 0.2)',
   zIndex: 3,
 
+  '@mmd': {
+    paddingLeft: 24,
+    paddingRight: 30,
+  },
+
+  '@tmd': {
+    height: 'unset',
+    paddingTop: 28,
+    flexDirection: 'column',
+    alignItems: 'flex-start',
+  },
+
   '.left': {
     flex: 1,
     maxWidth: 574,
     paddingBottom: '10.1rem',
+
+    '@mmd': {
+      maxWidth: 400,
+    },
+
+    '@md': {
+      maxWidth: '100%',
+      paddingBottom: '4.8rem',
+    },
 
     h3: {
       fontWeight: 700,
@@ -77,6 +117,11 @@ export const ContentText = styled('div', {
       color: '$white',
       marginBottom: 24,
       maxWidth: 400,
+
+      '@md': {
+        fontSize: '48px',
+        lineHeight: '56px',
+      },
     },
     p: {
       fontWeight: 400,
