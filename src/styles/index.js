@@ -17,4 +17,13 @@ export const { styled, globalCss, keyframes, getCssText, theme } =
         gray200: '#e1e0e7',
       },
     },
+    media: {
+      xxs: '(max-width: 360px)',
+      xs: '(max-width: 414px)',
+      sm: '(max-width: 640px)',
+      md: '(max-width: 768px)',
+      lg: '(max-width: 1024px)',
+      xl: '(max-width: 1280px)',
+      xxl: '(min-width: 1536px)',
+    },
   });
