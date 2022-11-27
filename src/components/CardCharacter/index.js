@@ -4,7 +4,7 @@ import Image from 'next/image';
 
 export function CardCharacter({ image, name, slug }) {
   return (
-    <StyleCard>
+    <StyleCard data-aos="fade-up">
       <Link href={`/character/${slug}`}>
         <div className="image">
           <Image width={280} height={372} src={image} alt="Image Character" />

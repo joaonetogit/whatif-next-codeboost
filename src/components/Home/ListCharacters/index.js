@@ -7,11 +7,13 @@ import { CardCharacter } from '../../CardCharacter';
 
 export function ListCharacters({ data }) {
   return (
-    <StyleSectionCharacters>
+    <StyleSectionCharacters data-aos="fade-up" data-aos-delay="120">
       <Container>
         <div className="title">
-          <span>What if</span>
-          <h2>Personagens Marvel</h2>
+          <span data-aos="fade-up">What if</span>
+          <h2 data-aos="fade-up" data-aos-delay="100">
+            Personagens Marvel
+          </h2>
         </div>
         <StyleListCharacters>
           {data.map((character) => {
@@ -25,7 +27,7 @@ export function ListCharacters({ data }) {
             );
           })}
 
-          <div className="marvel">
+          <div className="marvel" data-aos="fade-up">
             <Image src={LogoMarvel} alt="Logo marverl" />
           </div>
         </StyleListCharacters>

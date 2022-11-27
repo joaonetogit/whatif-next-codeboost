@@ -15,7 +15,6 @@ export default function Document() {
           href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap"
           rel="stylesheet"
         />
-
         <style
           id="stiches"
           dangerouslySetInnerHTML={{ __html: getCssText() }}
@@ -24,6 +23,8 @@ export default function Document() {
       <body>
         <Main />
         <NextScript />
+
+        <script>AOS.init();</script>
       </body>
     </Html>
   );

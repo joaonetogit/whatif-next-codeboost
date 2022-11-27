@@ -6,7 +6,7 @@ export function SectionHeroCharacter({ data }) {
   return (
     <StyleSectionHeroCharacter>
       <Container>
-        <div className="image">
+        <div className="image" data-aos="fade-right">
           <Image
             src={data.image_character.url}
             width={data.image_character.dimensions.width}
@@ -14,7 +14,7 @@ export function SectionHeroCharacter({ data }) {
             alt="Image Person"
           />
         </div>
-        <div className="info">
+        <div className="info" data-aos="fade-left" data-aos-delay="100">
           <span>A história</span>
           <div className="text">
             <h1 className="title">{data.name_character}</h1>

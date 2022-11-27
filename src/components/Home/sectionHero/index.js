@@ -38,10 +38,15 @@ export function SectionHero({ data }) {
 
         <ContentText>
           <div className="left">
-            <h3>{data.subtitle_hero}</h3>
-            <h1>{data.title_hero}</h1>
-            <p>{data.description_hero[0].text}</p>
-            <a href={data.url_button.url} target="_blank" rel="noreferrer">
+            <h3 data-aos="fade-left">{data.subtitle_hero}</h3>
+            <h1 data-aos="fade-left">{data.title_hero}</h1>
+            <p data-aos="fade-left">{data.description_hero[0].text}</p>
+            <a
+              data-aos="fade-left"
+              href={data.url_button.url}
+              target="_blank"
+              rel="noreferrer"
+            >
               {data.label_button}
             </a>
           </div>

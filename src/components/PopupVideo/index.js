@@ -4,7 +4,7 @@ import IconPlay from '../../assets/play.svg';
 
 export function PopupVideo({ label, thumb }) {
   return (
-    <PopupVideoStyle>
+    <PopupVideoStyle data-aos="fade-right" data-aos-delay="100">
       <span>{label}</span>
       <button style={{ background: `url(${thumb})` }}>
         <div>

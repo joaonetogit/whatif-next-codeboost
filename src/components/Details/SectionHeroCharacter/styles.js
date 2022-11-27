@@ -2,7 +2,7 @@ import { styled } from '../../../styles';
 import { Container } from '../../../styles/global';
 
 export const StyleSectionHeroCharacter = styled('div', {
-  marginTop: 98,
+  marginTop: 96,
   height: 631,
   borderBottom: '1px solid rgba(255,255,255, 0.2)',
 
@@ -11,22 +11,31 @@ export const StyleSectionHeroCharacter = styled('div', {
   },
 
   [`${Container}`]: {
+    position: 'relative',
     display: 'flex',
     alignItems: 'center',
     gap: 32,
-    borderLeft: '1px solid rgba(255,255,255, 0.2)',
-    borderRight: '1px solid rgba(255,255,255, 0.2)',
 
     '@md': {
       flexDirection: 'column',
+    },
+
+    '&:before': {
+      position: 'absolute',
+      content: '',
+      top: 0,
+      right: 16,
+      height: '100%',
+      width: 1,
+      backgroundColor: 'rgba(255,255,255, 0.2)',
     },
   },
   '.image': {
     width: '100%',
     height: '100%',
     maxWidth: 486,
-    borderRadius: 5,
     overflow: 'hidden',
+    borderLeft: '1px solid rgba(255,255,255, 0.2)',
 
     '@mmd': {
       maxWidth: '35rem',

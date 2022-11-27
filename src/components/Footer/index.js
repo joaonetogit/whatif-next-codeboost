@@ -1,4 +1,3 @@
-import Link from 'next/link';
 import { FooterStyle } from './styles';
 import Image from 'next/image';
 import { Container } from '../../styles/global';
