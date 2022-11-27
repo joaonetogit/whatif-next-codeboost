@@ -14,7 +14,11 @@ export const globalStyles = globalCss({
   body: {
     background: 'linear-gradient(119.36deg, #010101 0%, #000000 100%);',
     color: '$white',
-    'webkit-font-smoothing': 'antialiased',
+    '-webkit-font-smoothing': 'antialiased',
+    textRendering: 'optimizeLegibility',
+    '-moz-osx-font-smoothing': 'grayscale',
+    '-ms-text-size-adjust': '100%',
+    '-webkit-text-size-adjust': '100%',
   },
   img: {
     maxWidth: '100%',
@@ -30,6 +34,7 @@ export const globalStyles = globalCss({
 
 export const Container = styled('div', {
   width: '100%',
-  maxWidth: 1216,
+  maxWidth: 1248,
   margin: '0 auto',
+  padding: '0 16px',
 });
