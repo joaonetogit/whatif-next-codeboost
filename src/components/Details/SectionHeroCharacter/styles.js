@@ -6,12 +6,20 @@ export const StyleSectionHeroCharacter = styled('div', {
   height: 631,
   borderBottom: '1px solid rgba(255,255,255, 0.2)',
 
+  '@mmd': {
+    height: 'unset',
+  },
+
   [`${Container}`]: {
     display: 'flex',
     alignItems: 'center',
     gap: 32,
     borderLeft: '1px solid rgba(255,255,255, 0.2)',
     borderRight: '1px solid rgba(255,255,255, 0.2)',
+
+    '@md': {
+      flexDirection: 'column',
+    },
   },
   '.image': {
     width: '100%',
@@ -19,6 +27,10 @@ export const StyleSectionHeroCharacter = styled('div', {
     maxWidth: 486,
     borderRadius: 5,
     overflow: 'hidden',
+
+    '@mmd': {
+      maxWidth: '35rem',
+    },
     img: {
       borderRadius: 5,
       width: '100%',
@@ -29,6 +41,11 @@ export const StyleSectionHeroCharacter = styled('div', {
   '.info': {
     flex: 1,
     display: 'flex',
+
+    '@sm': {
+      gap: '1.4rem',
+      flexDirection: 'column',
+    },
 
     span: {
       position: 'relative',
@@ -62,6 +79,11 @@ export const StyleSectionHeroCharacter = styled('div', {
         lineHeight: '71px',
         color: '$white',
         marginBottom: 13,
+
+        '@xs': {
+          fontSize: 48,
+          lineHeight: '56px',
+        },
       },
       p: {
         width: '100%',
@@ -70,6 +92,10 @@ export const StyleSectionHeroCharacter = styled('div', {
         fontSize: 16,
         lineHeight: '24px',
         color: '$gray400',
+
+        '@md': {
+          paddingBottom: 48,
+        },
       },
     },
   },

@@ -10,9 +10,27 @@ export const FooterStyle = styled('div', {
     alignItems: 'flex-start',
     justifyContent: 'space-between',
 
+    '@md': {
+      alignItems: 'center',
+      gap: '5rem',
+    },
+
+    '@xs': {
+      flexDirection: 'column-reverse',
+    },
+
     '& > div': {
       display: 'flex',
       alignItems: 'flex-start',
+
+      '@md': {
+        flexDirection: 'column-reverse',
+        alignItems: 'flex-start',
+        gap: '1.6rem',
+      },
+      '@xs': {
+        alignItems: 'center',
+      },
 
       strong: {
         fontWeight: 700,
@@ -29,6 +47,11 @@ export const FooterStyle = styled('div', {
         lineHeight: '21px',
         color: '$gray500',
         marginLeft: 183,
+
+        '@md': {
+          maxWidth: '85%',
+          marginLeft: 'unset',
+        },
       },
     },
   },

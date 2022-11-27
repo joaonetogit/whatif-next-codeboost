@@ -5,6 +5,10 @@ export const StyleCard = styled('div', {
   maxWidth: 280,
   display: 'block',
 
+  '@mmd': {
+    maxWidth: '100%',
+  },
+
   '&:hover': {
     '.image': {
       img: {
@@ -33,6 +37,7 @@ export const StyleCard = styled('div', {
       transition: 'all 0.3s ease',
     },
   },
+
   '.info': {
     display: 'flex',
     justifyContent: 'space-between',

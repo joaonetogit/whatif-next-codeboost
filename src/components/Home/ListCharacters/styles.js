@@ -4,10 +4,18 @@ export const StyleSectionCharacters = styled('section', {
   paddingTop: 56,
   paddingBottom: 72,
 
+  '@md': {
+    paddingBottom: 0,
+  },
+
   '.title': {
     display: 'flex',
     alignItems: 'center',
     marginBottom: 56,
+
+    '@xs': {
+      justifyContent: 'space-between',
+    },
 
     span: {
       display: 'block',
@@ -17,6 +25,10 @@ export const StyleSectionCharacters = styled('section', {
       color: '$white',
       opacity: '0.4',
       marginRight: 113,
+
+      '@xs': {
+        marginRight: 'unset',
+      },
     },
 
     h2: {
@@ -44,7 +56,7 @@ export const StyleSectionCharacters = styled('section', {
 
 export const StyleListCharacters = styled('div', {
   display: 'grid',
-  gridTemplateColumns: 'repeat(4, 1fr)',
+  gridTemplateColumns: 'repeat(auto-fit, minmax(25rem, 1fr))',
   gridGap: '40px 33px',
 
   '.marvel': {
@@ -53,5 +65,9 @@ export const StyleListCharacters = styled('div', {
     display: 'flex',
     alignItems: 'center',
     justifyContent: 'center',
+
+    '@md': {
+      width: '100%',
+    },
   },
 });
